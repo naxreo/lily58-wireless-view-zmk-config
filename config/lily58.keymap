@@ -30,20 +30,6 @@
             label = "ASRIGHT";
         };
 
-        acright: acleft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(RIGHT_ARROW))>;
-            label = "ACLEFT";
-        };
-
-        acleft: acleft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(LEFT_ARROW))>;
-            label = "ACLEFT";
-        };
-
         aleft: aleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -56,6 +42,20 @@
             #binding-cells = <0>;
             bindings = <&kp LA(RIGHT_ARROW)>;
             label = "ARIGHT";
+        };
+
+        acleft: acleft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(LEFT_ARROW))>;
+            label = "ACLEFT";
+        };
+
+        acright: acright {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(RIGHT_ARROW))>;
+            label = "ACRIGHT";
         };
     };
 
