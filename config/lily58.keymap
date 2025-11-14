@@ -98,6 +98,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        toggleLayer1 {
+            bindings = <&tog 1>;
+            key-positions = <7 8>;
+        };
+
+        toggleLayer2 {
+            bindings = <&tog 2>;
+            key-positions = <8 9>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
