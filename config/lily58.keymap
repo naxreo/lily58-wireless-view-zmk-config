@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -51,14 +54,14 @@
         leftTop: leftTop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp LSHFT &kp LEFT>;
+            bindings = <&kp LA(LS(LEFT))>;
             label = "LEFTTOP";
         };
 
         rightTop: rightTop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp LSHFT &kp RIGHT>;
+            bindings = <&kp LA(LS(RIGHT))>;
             label = "RIGHTTOP";
         };
 
