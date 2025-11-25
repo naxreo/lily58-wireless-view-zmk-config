@@ -161,11 +161,11 @@
 
             display-name = "Raise";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &bt BT_CLR_ALL  &none           &none         &kp LEFT_BRACE   &kp RIGHT_BRACE  &none
-&leftTop     &rightTop     &kp F1        &kp F2        &kp F3        &kp F4                        &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT  &none            &mkp MB4
-&leftHalf    &rightHalf    &kp F5        &kp F6        &kp F7        &kp F8                        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none            &none
-&leftBottom  &rightBottom  &kp F9        &kp F10       &kp F11       &kp F12       &none    &none  &none           &mkp MB1        &mkp MB3      &mkp MB2         &none            &none
-                                         &trans        &trans        &trans        &none    &none  &trans          &trans          &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bootloader                  &bootloader     &none           &none         &kp LEFT_BRACE   &kp RIGHT_BRACE  &bt BT_CLR_ALL
+&leftTop     &rightTop     &kp F1        &kp F2        &kp F3        &kp F4                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none            &mkp MB4
+&leftHalf    &rightHalf    &kp F5        &kp F6        &kp F7        &kp F8                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none            &none
+&leftBottom  &rightBottom  &kp F9        &kp F10       &kp F11       &kp F12      &none    &none  &none           &mkp MB1        &mkp MB3      &mkp MB2         &none            &none
+                                         &trans        &trans        &trans       &none    &none  &trans          &trans          &trans
             >;
         };
 
