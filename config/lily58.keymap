@@ -113,6 +113,11 @@
             bindings = <&tog 2>;
             key-positions = <8 9>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
@@ -149,7 +154,7 @@
 &kp GRAVE  &kp EXCLAMATION    &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                  &kp CARET       &kp AMPERSAND   &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp SPACE  &kp PLUS           &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp MINUS                    &kp PLUS        &kp EQUAL       &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
 &kp ENTER  &kp C_VOLUME_UP    &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp ESCAPE                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW       &kp COLON              &kp DOUBLE_QUOTES
-&trans     &kp C_VOLUME_DOWN  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp N0       &none    &none  &kp DELETE      &kp ESCAPE      &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
+&trans     &kp C_VOLUME_DOWN  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp N0       &none    &none  &kp DELETE      &kp BACKSPACE   &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
                                             &trans        &trans        &trans       &none    &none  &kp ENTER       &trans          &shiftEnter
             >;
         };
@@ -166,8 +171,8 @@
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bootloader                  &bootloader     &none           &none         &kp LEFT_BRACE   &kp RIGHT_BRACE  &bt BT_CLR_ALL
 &leftTop     &rightTop     &kp F1        &kp F2        &kp F3        &kp F4                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none            &mkp MB4
-&leftHalf    &rightHalf    &kp F5        &kp F6        &kp F7        &kp F8                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none            &none
-&leftBottom  &rightBottom  &kp F9        &kp F10       &kp F11       &kp F12      &none    &none  &none           &mkp MB1        &mkp MB3      &mkp MB2         &none            &none
+&leftHalf    &rightHalf    &kp F5        &kp F6        &kp F7        &kp F8                       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp PAGE_UP      &none
+&leftBottom  &rightBottom  &kp F9        &kp F10       &kp F11       &kp F12      &none    &none  &none           &mkp MB1        &mkp MB3      &mkp MB2         &kp PAGE_DOWN    &none
                                          &trans        &trans        &trans       &none    &none  &trans          &trans          &trans
             >;
         };
