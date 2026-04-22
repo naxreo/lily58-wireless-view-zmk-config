@@ -106,6 +106,20 @@
             bindings = <&kp LA(LS(O))>;
             label = "ALTSHIFTO";
         };
+
+        mc_sc4: mc_sc4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            label = "MC_SC4";
+        };
+
+        mc_sc5: mc_sc5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(NUMBER_5))>;
+            label = "MC_SC5";
+        };
     };
 
     combos {
@@ -121,9 +135,9 @@
             key-positions = <8 9>;
         };
 
-        mc_enter {
+        cb_enter {
             bindings = <&kp ENTER>;
-            key-positions = <46 47>;
+            key-positions = <32 33>;
         };
 
         blue {
@@ -134,6 +148,11 @@
         toggleLayer3 {
             bindings = <&tog 3>;
             key-positions = <7 9>;
+        };
+
+        cb_tab {
+            bindings = <&kp TAB>;
+            key-positions = <28 27>;
         };
     };
 
@@ -154,7 +173,7 @@
 &kp TAB       &kp Q                   &kp W               &kp E                   &kp R                 &kp T                   &kp Y            &kp U                   &kp I                         &kp O                      &kp P                         &kp BACKSLASH
 &kp CAPSLOCK  &kp A                   &kp S               &kp D                   &kp F                 &kp G                   &kp H            &kp J                   &kp K                         &kp L                      &kp SEMICOLON                 &kp SQT
 &kp LSHFT     &hmLeft LEFT_CONTROL Z  &hmLeft LEFT_ALT X  &hmLeft LEFT_COMMAND C  &hmLeft LEFT_SHIFT V  &kp B   &none    &none  &kp N            &hmRight RIGHT_SHIFT M  &hmRight RIGHT_COMMAND COMMA  &hmRight RIGHT_ALT PERIOD  &hmRight RIGHT_CONTROL SLASH  &kp RSHFT
-                                                          &layerTab 2 SPACE       &kp LGUI              &mo 1   &none    &none  &layerTab 1 TAB  &kp SPACE               &kp ENTER
+                                                          &layerTab 2 SPACE       &mt LGUI ESCAPE       &mo 1   &none    &none  &layerTab 1 TAB  &kp SPACE               &kp ENTER
             >;
         };
 
@@ -170,7 +189,7 @@
             bindings = <
 &kp GRAVE  &kp EXCLAMATION    &kp AT_SIGN     &kp HASH              &kp DOLLAR             &kp PERCENT                  &kp CARET       &kp AMPERSAND   &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp SPACE  &kp K_MUTE         &kp PLUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                    &kp PLUS        &kp EQUAL       &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&kp ENTER  &kp C_VOLUME_UP    &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ESCAPE                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW       &kp COLON              &kp DOUBLE_QUOTES
+&kp ENTER  &kp C_VOLUME_UP    &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &mc_sc4                      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW       &kp COLON              &kp DOUBLE_QUOTES
 &trans     &kp C_VOLUME_DOWN  &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TAB      &none    &none  &kp DELETE      &kp BACKSPACE   &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
                                               &trans                &trans                 &trans       &none    &none  &kp ENTER       &trans          &shiftEnter
             >;
