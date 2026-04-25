@@ -65,7 +65,7 @@
 
         cb_enter {
             bindings = <&kp ENTER>;
-            key-positions = <46 47>;
+            key-positions = <32 33>;
         };
 
         blue {
@@ -81,6 +81,11 @@
         cb_tab {
             bindings = <&kp TAB>;
             key-positions = <28 27>;
+        };
+
+        cb_shiftenter {
+            bindings = <&kp LS(ENTER)>;
+            key-positions = <31 33>;
         };
     };
 
