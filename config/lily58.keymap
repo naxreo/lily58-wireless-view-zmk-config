@@ -138,11 +138,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp F1        &kp F2         &kp F3         &kp F4            &kp F5             &kp F6                              &kp F7          &kp F8            &kp F9        &kp F10          &kp F11        &kp F12
-&none         &none          &none          &kp LC(UP)        &kp PRINTSCREEN    &kp LA(LC(DELETE))                  &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &none          &mkp MB4
-&kp LA(LEFT)  &kp LA(RIGHT)  &kp LS(LA(O))  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp PAGE_UP                         &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp PAGE_UP    &kp HOME
-&none         &none          &none          &kp LS(LC(C))     &kp LC(LS(V))      &kp PAGE_DOWN       &none    &none  &none           &mkp MB1          &mkp MB2      &mkp MB3         &kp PAGE_DOWN  &kp END
-                                            &trans            &trans             &trans              &none    &none  &trans          &kp LANG_HANGEUL  &mo 3
+&kp F1        &kp F2         &kp F3                &kp F4            &kp F5             &kp F6                              &kp F7          &kp F8            &kp F9        &kp F10          &kp F11        &kp F12
+&none         &none          &none                 &kp LC(UP)        &kp PRINTSCREEN    &kp LA(LC(DELETE))                  &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &none          &mkp MB4
+&kp LA(LEFT)  &kp LA(RIGHT)  &kp LS(LA(O))         &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp PAGE_UP                         &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp PAGE_UP    &kp HOME
+&none         &mo 3          &kp LS(LG(NUMBER_4))  &kp LS(LG(C))     &kp LS(LG(V))      &kp PAGE_DOWN       &none    &none  &none           &mkp MB1          &mkp MB2      &mkp MB3         &kp PAGE_DOWN  &kp END
+                                                   &trans            &trans             &trans              &none    &none  &trans          &kp LANG_HANGEUL  &mo 3
             >;
         };
 
