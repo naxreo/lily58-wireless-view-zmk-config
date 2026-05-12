@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <240>;
             flavor = "tap-preferred";
             bindings = <&shifted>, <&kp>;
         };
@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP_SLOW";
             #binding-cells = <2>;
-            tapping-term-ms = <240>;
+            tapping-term-ms = <280>;
             flavor = "tap-preferred";
             bindings = <&shifted>, <&kp>;
         };
@@ -158,7 +158,7 @@
             display-name = "Base";
             bindings = <
 &kp ESC       &kp N1                  &kp N2              &kp N3                  &kp N4                &kp N5                  &kp N6                 &kp N7                  &kp N8                        &kp N9                     &kp N0                        &kp BACKSPACE
-&kp TAB       &as_slow Q                   &as W               &as_slow E                   &as R                 &as T                   &kp Y                  &kp U                   &kp I                         &as O                      &as P                         &kp BACKSLASH
+&kp TAB       &as Q                   &as W               &as E                   &as R                 &as T                   &kp Y                  &kp U                   &kp I                         &as O                      &as P                         &kp BACKSLASH
 &kp CAPSLOCK  &kp A                   &kp S               &kp D                   &kp F                 &kp G                   &kp H                  &kp J                   &kp K                         &kp L                      &kp SEMICOLON                 &kp SQT
 &kp LSHFT     &hmLeft LEFT_CONTROL Z  &hmLeft LEFT_ALT X  &hmLeft LEFT_COMMAND C  &hmLeft LEFT_SHIFT V  &kp B   &none    &none  &kp N                  &hmRight RIGHT_SHIFT M  &hmRight RIGHT_COMMAND COMMA  &hmRight RIGHT_ALT PERIOD  &hmRight RIGHT_CONTROL SLASH  &kp RSHFT
                                                           &layerTab 2 SPACE       &mt LGUI ESCAPE       &mo 1   &none    &none  &layerTab 1 BACKSPACE  &kp SPACE               &kp ENTER
