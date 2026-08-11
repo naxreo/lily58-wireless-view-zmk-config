@@ -132,7 +132,7 @@
 
         blue {
             bindings = <&mo 3>;
-            key-positions = <40 38>;
+            key-positions = <50 57>;
         };
 
         toggleLayer3 {
@@ -161,7 +161,7 @@
 &kp TAB       &as Q                   &as W               &as E                   &as R                 &as T                   &kp Y                  &kp U                   &kp I                         &as O                      &as P                         &kp BACKSLASH
 &kp CAPSLOCK  &kp A                   &kp S               &kp D                   &kp F                 &kp G                   &kp H                  &kp J                   &kp K                         &kp L                      &kp SEMICOLON                 &kp SQT
 &kp LSHFT     &hmLeft LEFT_CONTROL Z  &hmLeft LEFT_ALT X  &hmLeft LEFT_COMMAND C  &hmLeft LEFT_SHIFT V  &kp B   &none    &none  &kp N                  &hmRight RIGHT_SHIFT M  &hmRight RIGHT_COMMAND COMMA  &hmRight RIGHT_ALT PERIOD  &hmRight RIGHT_CONTROL SLASH  &kp RSHFT
-                                                          &layerTab 2 SPACE       &mt LGUI ESCAPE       &mo 1   &none    &none  &layerTab 1 BACKSPACE  &kp SPACE               &kp ENTER
+                                                          &layerTab 2 SPACE       &mt LGUI ESCAPE       &mo 1   &none    &none  &kp SPACE  &layerTab 1 BACKSPACE               &kp ENTER
             >;
         };
 
@@ -172,7 +172,7 @@
 &kp SPACE  &kp K_MUTE         &kp PLUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                             &kp PLUS        &kp EQUAL       &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
 &kp ENTER  &kp C_VOLUME_UP    &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LS(LG(NUMBER_4))                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW       &kp COLON              &kp DOUBLE_QUOTES
 &trans     &kp C_VOLUME_DOWN  &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TAB               &none    &none  &kp DELETE      &kp BACKSPACE   &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
-                                              &trans                &trans                 &trans                &none    &none  &kp ENTER       &trans          &kp LS(ENTER)
+                                              &trans                &trans                 &trans                &none    &none  &trans          &kp ENTER       &kp LS(ENTER)
             >;
         };
 
@@ -183,7 +183,7 @@
 &none         &none          &none                 &kp LC(UP)        &kp PRINTSCREEN    &kp LA(LC(DELETE))                  &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &none          &mkp MB4
 &kp LA(LEFT)  &kp LA(RIGHT)  &kp LS(LA(O))         &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp PAGE_UP                         &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp PAGE_UP    &kp HOME
 &none         &mo 3          &kp LS(LG(NUMBER_4))  &kp LS(LG(C))     &kp LS(LG(V))      &kp PAGE_DOWN       &none    &none  &none           &mkp MB1          &mkp MB2      &mkp MB3         &kp PAGE_DOWN  &kp END
-                                                   &trans            &trans             &trans              &none    &none  &trans          &kp LANG_HANGEUL  &mo 3
+                                                   &trans            &trans             &trans              &none    &none  &kp LANG_HANGEUL  &trans          &trans
             >;
         };
 
@@ -194,7 +194,7 @@
 &none       &none         &none         &none         &none         &sys_reset                    &kp PLUS      &kp N7        &kp N8        &kp N9        &none         &none
 &none       &none         &none         &none         &none         &none                         &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp ENTER
 &none       &none         &none         &none         &none         &none         &none    &none  &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
-                                        &trans        &trans        &trans        &none    &none  &kp N0        &trans        &trans
+                                        &trans        &trans        &trans        &none    &none  &trans        &kp N0        &trans
             >;
         };
 
