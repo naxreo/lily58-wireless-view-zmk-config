@@ -156,7 +156,7 @@
 &kp TAB       &as Q                   &as W               &as E                   &as R                 &as T                   &kp Y      &kp U                      &kp I                         &as O                      &as P                         &kp BACKSLASH
 &kp CAPSLOCK  &kp A                   &kp S               &kp D                   &kp F                 &kp G                   &kp H      &kp J                      &kp K                         &kp L                      &kp SEMICOLON                 &kp SQT
 &kp LSHFT     &hmLeft LEFT_CONTROL Z  &hmLeft LEFT_ALT X  &hmLeft LEFT_COMMAND C  &hmLeft LEFT_SHIFT V  &kp B   &none    &none  &kp N      &hmRight RIGHT_SHIFT M     &hmRight RIGHT_COMMAND COMMA  &hmRight RIGHT_ALT PERIOD  &hmRight RIGHT_CONTROL SLASH  &kp RSHFT
-                                                          &layerTab 2 SPACE       &mt LGUI ESCAPE       &mo 1   &none    &none  &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &kp ENTER
+                                                          &layerTab 2 LS(ESC)     &mt LGUI ESCAPE       &mo 1   &none    &none  &kp SPACE  &mt RIGHT_SHIFT BACKSPACE  &kp ENTER
             >;
         };
 
